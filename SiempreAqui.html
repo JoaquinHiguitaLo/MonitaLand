@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../imagenes/icopag.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>MonitaLand</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-romantico">
+        <div class="container">
+
+            <!-- LOGO + NOMBRE -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="imagenes/icopag.png" alt="logo" width="35" height="35" class="me-2">
+                MonitaLand
+            </a>
+
+            <!-- BOTON MOVIL -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fotos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Momentos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mensajes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="SiempreAqui.html">Siempre Aquí</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center mt-4 px-3">
+        <h1 class="titulo-amor">Siempre estoy aquí para ti mi amor</h1>
+        <img src="imagenes/siempreaqui.jpeg.jpeg" class="img-fluid imagen-amor" alt="Siempre aquí">
+        <p class="descripcion">
+            Esta sección está hecha para acompañarte con frases bonitas en cada sentimiento o momento que vivas.
+            Aquí podrás encontrar unas palabras mías para recordarte que, sin importar la situación, estoy a tu lado
+            dándote apoyo. Está diseñada exclusivamente para ti, mi princesa, con todo mi amor.
+        </p>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row g-4">
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-danger" onclick="mostrarMensaje('enojada')">😡
+                            Enojada</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-warning" onclick="mostrarMensaje('feliz')">😁
+                            Feliz</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-primary" onclick="mostrarMensaje('triste')">😢
+                            Triste</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-info" onclick="mostrarMensaje('preocupada')">😥
+                            Preocupada</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-secondary" onclick="mostrarMensaje('pensativa')">🤔
+                            Pensativa</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-warning" onclick="mostrarMensaje('ansiosa')">😖
+                            Ansiosa</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-dark" onclick="mostrarMensaje('miedo')">😨 Con
+                            miedo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-dark" onclick="mostrarMensaje('cansada')">😫
+                            Cansada</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-info" onclick="mostrarMensaje('insegura')">😐
+                            Insegura</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <div class="card h-100 text-center">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-primary"
+                            onclick="mostrarMensaje('desmotivada')">😴Desmotivada</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        /* ===== MENSAJES COMPLETOS ===== */
+
+        const mensajes = {
+
+            enojada: [
+                "Respira, amor, estoy contigo en esto. No tienes que enfrentarlo sola, aquí me quedo hasta que todo se calme.",
+                "Tu enojo es válido y tiene una razón. Lo que sientes importa y merece ser escuchado con respeto.",
+                "No estás sola en esto, aunque ahora lo parezca. Caminamos juntos incluso en los momentos incómodos.",
+                "Incluso molesta sigues siendo hermosa. Tu intensidad también es parte de lo que te hace tan auténtica.",
+                "Esto va a pasar, aunque ahora se sienta enorme. Nada dura para siempre, ni siquiera este momento pesado.",
+                "No dejes que un instante difícil defina todo tu día. Eres mucho más que este enojo.",
+                "Confío en ti profundamente. Sé que sabrás manejar esto con la fuerza que te caracteriza.",
+                "Eres más fuerte que esta situación. Ya has superado cosas más grandes antes.",
+                "Te admiro incluso en tormenta. Tu carácter brilla hasta cuando el cielo se nubla.",
+                "Tu corazón sigue siendo bueno, incluso cuando estás molesta. Tu esencia no cambia por un mal momento.",
+                "Aquí tienes un abrazo virtual apretado y sincero. Imagina mis brazos rodeándote con calma.",
+                "Tu luz no se apaga por un mal rato. Sigue ahí, intacta, esperando volver a brillar con fuerza.",
+                "Lo estás haciendo lo mejor que puedes. Y eso ya es suficiente, incluso si hoy no te sientes perfecta.",
+                "Estoy orgulloso de ti, incluso ahora. Porque sentir y expresarlo también es valentía.",
+                "Todo se acomodará a su tiempo. Respira, deja que las piezas encuentren su lugar.",
+                "No cargues sola con todo esto. Déjame sostener un poco del peso contigo.",
+                "Eres increíble, incluso cuando dudas de ti. Tu valor no depende de tu estado de ánimo.",
+                "Tu fuerza me inspira más de lo que imaginas. Incluso enojada sigues siendo admirable.",
+                "Te amo también en los días difíciles. Mi cariño no cambia con tu humor, se mantiene firme.",
+                "Respira… paso a paso, momento a momento. No tienes que resolverlo todo ahora, solo el siguiente respiro."
+            ],
+
+            feliz: [
+                "Tu sonrisa ilumina todo a tu alrededor. Cuando sonríes, el mundo parece un lugar mucho más bonito.",
+                "Mereces esta alegría y todo lo bueno que viene con ella. Has hecho mucho para llegar hasta aquí.",
+                "Verte feliz es mi lugar favorito. No hay escena más perfecta que tú disfrutando el momento.",
+                "Que nada opaque tu luz. Lo que brilla en ti es auténtico y merece quedarse encendido.",
+                "Eres pura magia cuando estás así. Tu energía transforma todo lo que tocas.",
+                "Disfruta este momento sin culpa y sin prisa. Instantes así son tesoros que se guardan en el corazón.",
+                "Tu felicidad me da paz. Saber que estás bien hace que todo tenga más sentido.",
+                "Eres hermosa sonriendo, pero más aún cuando esa sonrisa es sincera y nace del alma.",
+                "Gracias por existir y por compartir tu luz conmigo. Tu presencia es un regalo.",
+                "El mundo mejora contigo feliz. Tu alegría contagia y deja huellas bonitas en los demás.",
+                "Sigue brillando como lo haces ahora. No te apagues por nada ni por nadie.",
+                "Tu risa es mi sonido favorito. Tiene algo que acomoda todo por dentro.",
+                "Me encanta verte así, ligera y llena de vida. Esa versión tuya es maravillosa.",
+                "Eres increíble, y momentos como este solo lo confirman aún más.",
+                "Que este día quede grabado en tu memoria como uno de esos recuerdos que siempre sacan sonrisa.",
+                "Mereces todo lo bueno que te está pasando y aún más. No dudes de eso.",
+                "No pierdas esa chispa que te hace única. Es parte esencial de quien eres.",
+                "Estoy orgulloso de ti y de cada paso que te llevó hasta esta felicidad.",
+                "Quédate en esa emoción todo lo que puedas. Permítete sentirla sin límites.",
+                "Te amo feliz, y también en cada versión de ti, pero verte así me llena el alma."
+            ],
+
+            triste: [
+                "No tienes que ser fuerte hoy. Está bien si solo quieres sentir y dejar que el día pase despacio.",
+                "Estoy aquí contigo, sin prisas y sin condiciones. No tienes que atravesar esto sola.",
+                "Tu tristeza no te define. Es solo una emoción, no es todo lo que eres.",
+                "Puedes llorar si lo necesitas. A veces las lágrimas también alivian el corazón.",
+                "Mañana dolerá menos, aunque ahora parezca difícil creerlo. El tiempo suaviza lo que hoy pesa.",
+                "Eres más de lo que sientes ahora. Este momento no resume tu historia.",
+                "Te abrazo fuerte, de esos abrazos que no dicen nada pero lo contienen todo.",
+                "No estás rota. Estás atravesando algo, y eso no disminuye tu valor.",
+                "Esto también pasará, incluso si hoy parece eterno. Nada malo dura para siempre.",
+                "Tu corazón es fuerte, incluso cuando se siente cansado o herido.",
+                "Permítete descansar sin culpa. Sanar también implica detenerse un momento.",
+                "Eres suficiente, incluso en tus días más nublados.",
+                "No estás sola, aunque el silencio intente convencerte de lo contrario.",
+                "Tu luz sigue ahí, aunque ahora esté cubierta por nubes.",
+                "Confía en el proceso, incluso si no entiendes todo lo que estás sintiendo.",
+                "Te admiro por seguir adelante, incluso cuando todo pesa más.",
+                "Sigue respirando, despacio… un momento a la vez es suficiente.",
+                "Estoy orgulloso de ti por no rendirte, incluso en los días grises.",
+                "Aquí me quedo, acompañándote hasta que vuelva la calma.",
+                "Te amo incluso en gris, porque tu valor no depende del color de tu día."
+            ],
+
+
+            preocupada: [
+                "No todo saldrá mal, aunque tu mente te haga imaginar mil escenarios. Muchas veces las cosas se acomodan mejor de lo que esperamos.",
+                "Respira despacio conmigo. Inhala calma, exhala tensión, y repite hasta que el ruido baje un poco.",
+                "Confía en ti y en tu capacidad para resolver lo que venga. Ya has demostrado antes de lo que eres capaz.",
+                "Paso a paso, no necesitas resolverlo todo ahora mismo. Solo enfócate en lo siguiente que puedes hacer.",
+                "Has superado cosas peores que esto. Si miras atrás, verás tu propia fuerza.",
+                "No cargues todo hoy. Está bien dejar algunas preocupaciones para mañana.",
+                "Tu mente exagera a veces cuando tiene miedo. No todo pensamiento es una realidad.",
+                "Estoy contigo en esto. No tienes que sostener la ansiedad sola.",
+                "Todo se resolverá de una forma u otra. La incertidumbre no es eterna.",
+                "Tienes capacidad y herramientas para enfrentar lo que venga. No subestimes tu preparación.",
+                "Descansa tu mente un momento. No todo problema se soluciona pensándolo sin parar.",
+                "No anticipes dolor que aún no ha llegado. Vive el presente, no los miedos del futuro.",
+                "Eres fuerte incluso cuando dudas. La fortaleza también está en seguir intentando.",
+                "Confía en el proceso, aunque no veas aún el resultado final.",
+                "No estás sola en esta preocupación. Aquí estoy para sostenerte.",
+                "Tu calma volverá poco a poco. Las tormentas internas también pasan.",
+                "Lo lograrás, incluso si ahora sientes incertidumbre.",
+                "Eres capaz, más de lo que tu ansiedad te permite ver.",
+                "Yo creo en ti firmemente, incluso cuando tú no puedes hacerlo.",
+                "Todo estará bien, y si algo se complica, sabrás cómo afrontarlo."
+            ],
+
+            pensativa: [
+                "Tu profundidad es hermosa. No todos se permiten mirar tan adentro como tú lo haces.",
+                "No todas las respuestas son inmediatas. Algunas llegan con tiempo y paciencia.",
+                "Reflexionar también es crecer. Cada pensamiento tuyo construye una versión más consciente de ti.",
+                "Confía en tu intuición. Esa voz interna suele saber más de lo que imaginas.",
+                "Tu mente es brillante, incluso cuando está llena de dudas.",
+                "Está bien cuestionar lo que sientes y lo que te rodea. Eso demuestra que te importa entender.",
+                "Tu proceso es válido, aunque no todos lo comprendan.",
+                "Me encanta tu forma de pensar. Siempre encuentras matices donde otros solo ven blanco o negro.",
+                "No te apresures a concluir nada. Las mejores respuestas maduran despacio.",
+                "Tu silencio dice mucho. A veces pensar en calma es más poderoso que hablar.",
+                "Eres sabia, incluso cuando estás buscando dirección.",
+                "Sigue explorando tus ideas. Dentro de ti hay más claridad de la que crees.",
+                "Tu interior es valioso y merece tiempo, cuidado y atención.",
+                "No estás perdida, solo estás descubriendo nuevas partes de ti.",
+                "Estás evolucionando, y eso a veces se siente como incertidumbre.",
+                "Tu mente es hermosa porque no deja de aprender y cuestionar.",
+                "Confía en tu camino, aunque todavía no veas todo el recorrido.",
+                "Piensa todo lo que necesites, pero no te castigues por no tener aún todas las respuestas.",
+                "Eres increíble por atreverte a sentir y analizar con tanta honestidad.",
+                "Estoy contigo mientras piensas, sin presionarte, respetando tu ritmo."
+            ],
+
+            ansiosa: [
+                "Respira conmigo, despacio. Inhala profundo y suelta poco a poco hasta que tu pecho se sienta más ligero.",
+                "No todo es urgente, aunque tu mente lo quiera resolver todo ahora mismo.",
+                "Esto pasará, incluso si ahora se siente intenso y difícil de manejar.",
+                "No estás en peligro. Tu cuerpo solo está reaccionando, pero estás a salvo.",
+                "Tu mente se calmará, dale un momento para bajar el volumen.",
+                "Da un paso pequeño. No necesitas resolver todo, solo lo que está justo frente a ti.",
+                "Eres más que tu ansiedad. Esto es una parte de lo que sientes, no todo lo que eres.",
+                "Estoy aquí contigo, sosteniéndote en este momento.",
+                "No luches sola contra esto. Permíteme acompañarte mientras atraviesas la ola.",
+                "Tu valor no cambia por sentirte así. Sigues siendo igual de importante.",
+                "Todo bajará de intensidad. Las emociones fuertes también se cansan.",
+                "Respira otra vez, aunque parezca repetitivo. Tu cuerpo necesita ese mensaje de calma.",
+                "Puedes con esto, incluso si ahora dudas de tu fuerza.",
+                "No estás rota. Solo estás atravesando un momento difícil.",
+                "La calma regresa, siempre encuentra la forma de volver.",
+                "Confía en ti y en tu capacidad de atravesar este instante.",
+                "No te juzgues por sentir ansiedad. No es una falla, es una emoción.",
+                "Esto no te define ni determina tu futuro.",
+                "Sigue respirando, un segundo a la vez es suficiente.",
+                "Te amo, incluso en tus momentos más acelerados y vulnerables."
+            ],
+
+            miedo: [
+                "Puedes tener miedo y aun así avanzar. Sentir temor no cancela tu valentía.",
+                "Tu valentía es mayor de lo que imaginas, incluso si ahora tiembla un poco.",
+                "No estás sola frente a esto. Aquí estoy contigo.",
+                "Confía en ti, incluso cuando la duda haga ruido.",
+                "Paso a paso, no necesitas saltar todo el camino de una vez.",
+                "Has sobrevivido antes a momentos que parecían imposibles.",
+                "Eres fuerte, incluso cuando el miedo intenta convencerte de lo contrario.",
+                "El miedo es temporal, aunque se sienta grande en este instante.",
+                "Aquí estoy, sosteniendo tu mano si lo necesitas.",
+                "Tu historia sigue escribiéndose, y este capítulo no es el final.",
+                "No dejes que el miedo te frene de intentar algo que puede ser bueno para ti.",
+                "Respira profundo. El aire también ayuda a ordenar el coraje.",
+                "Eres capaz de enfrentar más de lo que crees.",
+                "No estás indefensa. Tienes recursos y experiencia.",
+                "Confía en tu fuerza interior, esa que ya te ha levantado antes.",
+                "Todo mejora cuando decides no rendirte.",
+                "Sigue adelante, aunque sea con pasos pequeños.",
+                "Eres más grande que esto que hoy te asusta.",
+                "Estoy orgulloso de ti por intentarlo, incluso con miedo.",
+                "Te amo, también cuando necesitas reunir valor."
+            ],
+
+            cansada: [
+                "Descansar es válido y necesario. No todo se soluciona forzándote a seguir.",
+                "No eres floja por sentirte así. Estás cansada, y eso es humano.",
+                "Tu cuerpo necesita pausa, y escucharle es un acto de amor propio.",
+                "No te exijas tanto hoy. A veces hacer menos también es avanzar.",
+                "Eres suficiente, incluso en tus días de baja energía.",
+                "Hoy solo respira y haz lo esencial. Eso es más que suficiente.",
+                "Mañana será mejor si hoy te permites recuperar fuerzas.",
+                "Tu esfuerzo cuenta, incluso cuando nadie lo ve.",
+                "Descansa sin culpa. No tienes que ganarte el derecho a parar.",
+                "Tu valor no depende de tu productividad ni de cuánto hagas.",
+                "Has hecho mucho más de lo que reconoces.",
+                "Estoy orgulloso de ti, incluso cuando decides detenerte.",
+                "Relájate, el mundo puede esperar un poco.",
+                "Tómate tu tiempo. No hay prisa en sanar o recuperar energía.",
+                "Te lo mereces después de todo lo que has dado.",
+                "No tienes que demostrar nada a nadie para valer.",
+                "Eres increíble, incluso cuando estás agotada.",
+                "Baja el ritmo y escucha lo que necesitas.",
+                "Te abrazo suave, para que sientas apoyo sin presión.",
+                "Recárgate a tu manera. Tu energía también merece cuidado."
+            ],
+
+
+            insegura: [
+                "Eres suficiente tal como eres, incluso en los días en que dudas de ti.",
+                "No te compares con nadie. Tu camino y tus tiempos son únicos.",
+                "Tu esencia es única y no necesita parecerse a la de nadie más.",
+                "Yo veo tu grandeza, incluso cuando tú solo ves tus dudas.",
+                "Confía en ti, aunque sea un poquito más cada día.",
+                "Tu voz importa y merece ser escuchada con respeto.",
+                "Eres capaz de mucho más de lo que tu inseguridad te deja ver.",
+                "No necesitas perfección para ser valiosa o amada.",
+                "Tu valor es inmenso y no depende de opiniones externas.",
+                "Eres hermosa, no solo por fuera, sino en tu forma de sentir y pensar.",
+                "No minimices lo que eres ni lo que has logrado hasta ahora.",
+                "Eres especial simplemente por ser tú, sin adornos ni máscaras.",
+                "Tu presencia cambia todo, incluso cuando no te das cuenta.",
+                "Has logrado mucho más de lo que reconoces.",
+                "Eres fuerte, incluso cuando la duda habla más alto.",
+                "No necesitas aprobación constante para validar tu existencia.",
+                "Estoy orgulloso de ti por seguir intentándolo a pesar de tus miedos.",
+                "Brillas de una forma auténtica que nadie puede imitar.",
+                "Eres maravillosa incluso en tus momentos de inseguridad.",
+                "Te amo, incluso cuando te cuesta verte con los mismos ojos que yo."
+            ],
+
+            desmotivada: [
+                "No todos los días brillan, y eso no significa que estés retrocediendo.",
+                "Un paso pequeño también cuenta. Avanzar lento sigue siendo avanzar.",
+                "Tu fuego sigue ahí, aunque ahora solo parezca una chispa.",
+                "Descansa y reinicia si lo necesitas. Volver a empezar también es parte del camino.",
+                "No estás fallando, solo estás atravesando un momento más pesado.",
+                "Eres fuerte, incluso cuando no tienes ganas de intentarlo.",
+                "Mañana será diferente si hoy decides no rendirte contigo.",
+                "No te rindas contigo misma. Mereces tu propia paciencia.",
+                "Tu historia continúa, y este capítulo no define el final.",
+                "Estoy contigo incluso cuando te cuesta encontrar motivación.",
+                "No te castigues por no sentirte al cien por ciento.",
+                "Confía en el proceso, aunque no veas resultados inmediatos.",
+                "Eres capaz de levantarte otra vez, aunque hoy no lo sientas así.",
+                "Tu esfuerzo importa, incluso si no recibe aplausos.",
+                "Sigue adelante a tu ritmo, sin compararte con nadie.",
+                "Aún hay cosas bonitas esperándote más adelante.",
+                "No estás sola en este momento bajo.",
+                "Respira profundo y date permiso de empezar otra vez.",
+                "Te admiro por seguir aquí, incluso en días difíciles.",
+                "Te amo, incluso cuando dudas de tu propio impulso."
+            ]
+
+        };
+
+        /* ===== IMAGENES ===== */
+
+        const imagenes = [
+            "./imagenes/foto25.jpg",
+            "imagenes/foto26.jpg",
+            "imagenes/foto27.jpg",
+            "imagenes/foto28.jpg",
+            "imagenes/foto29.jpg",
+            "imagenes/foto30.jpg",
+            "imagenes/foto32.jpg",
+            "imagenes/foto33.jpg",
+            "imagenes/foto34.jpg",
+            "imagenes/foto35.jpg",
+            "imagenes/foto36.jpg",
+            "imagenes/foto37.jpg",
+            "imagenes/foto38.jpg",
+            "imagenes/foto39.jpg",
+            "imagenes/foto40.jpg",
+            "imagenes/foto41.jpg",
+            "imagenes/foto42.jpg",
+            "imagenes/foto43.jpg",
+            "imagenes/foto44.jpg",
+            "imagenes/foto45.jpg",
+            "imagenes/foto46.jpg",
+            "imagenes/foto47.jpg",
+            "imagenes/foto48.jpg",
+            "imagenes/foto49.jpg",
+            "imagenes/foto50.jpg",
+            "imagenes/foto51.jpg",
+            "imagenes/foto52.jpg",
+            "imagenes/foto53.jpg",
+            "imagenes/foto56.jpg",
+            "imagenes/foto57.jpg",
+            "imagenes/foto58.jpg",
+            "imagenes/foto59.jpg",
+            "imagenes/foto60.jpg",
+            "imagenes/foto63.jpg",
+            "imagenes/foto65.jpg",
+            "imagenes/foto67.jpg",
+            "imagenes/foto68.jpg",
+            "imagenes/foto69.jpg",
+            "imagenes/foto70.jpg",
+            "imagenes/foto90.jpg",
+            "imagenes/foto91.jpg",
+            "imagenes/foto92.jpg",
+            "imagenes/foto93.jpg",
+            "imagenes/foto95.jpg",
+            "imagenes/foto96.jpg",
+            "imagenes/foto97.jpg",
+            "imagenes/foto97(1).jpg",
+            "imagenes/foto98.jpg",
+            "imagenes/foto99.jpg",
+            "imagenes/foto100.jpg",
+            "imagenes/foto101.jpg",
+            "imagenes/foto102.jpg",
+            "imagenes/foto103.jpg",
+            "imagenes/foto104.jpg",
+            "imagenes/foto105.jpg",
+            "imagenes/foto106.jpg",
+            "imagenes/foto107.jpg",
+            "imagenes/foto108.jpg",
+            "imagenes/foto109.jpg"
+        ];
+
+
+        /* ===== COLORES SEGÚN ESTADO ===== */
+        const colores = {
+            enojada: "#FF5C5C", feliz: "#fff4b3", triste: "#cce0ff", preocupada: "#e6ccff",
+            pensativa: "#d9f2e6", ansiosa: "#ffd9cc", miedo: "#f2e6ff", cansada: "#f5f5f5",
+            insegura: "#ffe6f2", desmotivada: "#e0e0e0"
+        };
+
+        function mostrarMensaje(estado) {
+            const lista = mensajes[estado];
+            const mensajeRandom = lista[Math.floor(Math.random() * lista.length)];
+            const imagenRandom = imagenes[Math.floor(Math.random() * imagenes.length)];
+
+            document.body.style.transition = "background 0.5s";
+            document.body.style.background = colores[estado];
+            document.getElementById("textoMensaje").innerText = mensajeRandom;
+            document.getElementById("imagenRandom").src = imagenRandom;
+
+            document.getElementById("modalBg").style.display = "flex";
+            crearCorazones();
+        }
+
+        function cerrarModal() {
+            document.getElementById("modalBg").style.display = "none";
+        }
+
+        function crearCorazones() {
+            for (let i = 0; i < 15; i++) {
+                const corazon = document.createElement("div");
+                corazon.className = "corazon";
+                corazon.innerText = "❤️";
+                corazon.style.left = Math.random() * 100 + "vw";
+                corazon.style.fontSize = (Math.random() * 20 + 15) + "px";
+                document.body.appendChild(corazon);
+                setTimeout(() => { corazon.remove(); }, 4000);
+            }
+        }
+    </script>
+    <div id="modalBg" class="modal-bg">
+
+        <div class="carta">
+
+            <img id="imagenRandom" class="carta-img">
+
+            <div class="carta-texto">
+                <p id="textoMensaje"></p>
+            </div>
+
+            <button class="btn btn-outline-danger mt-3" onclick="cerrarModal()">Cerrar 💌</button>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
