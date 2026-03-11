@@ -245,3 +245,8 @@ text-align:center;
 color:#555;
 padding:0 10px;
 }
+.card-img-top{
+    height: 300px;       /* todas tendrán la misma altura */
+    width: 100%;
+    object-fit: cover;   /* mantiene proporción y recorta lo que sobra */
+}  
