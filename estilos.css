@@ -1,252 +1,403 @@
 /* NAVBAR ROMANTICO */
-.navbar-romantico{
-background:linear-gradient(45deg,#ff4d88,#ff6fa5);
-box-shadow:0 4px 15px rgba(0,0,0,0.2);
+.navbar-romantico {
+    background: linear-gradient(45deg, #ff4d88, #ff6fa5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* LINKS */
-.navbar-romantico .nav-link{
-color:white !important;
-font-weight:500;
-margin:0 5px;
-border-radius:10px;
-padding:6px 12px;
-transition:0.3s;
+.navbar-romantico .nav-link {
+    color: white !important;
+    font-weight: 500;
+    margin: 0 5px;
+    border-radius: 10px;
+    padding: 6px 12px;
+    transition: 0.3s;
 }
 
 /* HOVER */
-.navbar-romantico .nav-link:hover{
-background:rgba(255,255,255,0.25);
-color:white !important;
+.navbar-romantico .nav-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: white !important;
 }
 
 /* ACTIVO */
-.navbar-romantico .nav-link.active{
-background:white;
-color:#ff4d88 !important;
-font-weight:600;
+.navbar-romantico .nav-link.active {
+    background: white;
+    color: #ff4d88 !important;
+    font-weight: 600;
 }
 
 /* LOGO */
-.navbar-romantico .navbar-brand{
-font-weight:600;
-font-size:1.2rem;
-color:white !important;
-}
-.card{
-border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,0.1);
-transition:0.3s;
+.navbar-romantico .navbar-brand {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white !important;
 }
 
-.card:hover{
-transform:scale(1.03);
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 }
 
-.card img{
-    border-top-left-radius:15px;
-    border-top-right-radius:15px;
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 /* TITULO */
-.titulo-amor{
-    font-size:2.5rem;
-    font-weight:700;
-    margin-bottom:15px;
-    text-align:center;
-    font-weight:700;
-    margin-bottom:15px;
+.titulo-amor {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 /* TEXTO DESCRIPCION */
-.descripcion{
-    max-width:800px;
-    margin:auto;
-    font-size:1.1rem;
-    line-height:1.6;
-    color:#555;
-    padding:0 10px;
-}
-@media (max-width:768px){
-
-.titulo-amor{
-    font-size:1.7rem;
+.descripcion {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    padding: 0 10px;
 }
 
-.descripcion{
-    font-size:1rem;
-    padding:0 20px;
+@media (max-width:768px) {
+
+    .titulo-amor {
+        font-size: 1.7rem;
+    }
+
+    .descripcion {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .imagen-amor {
+        max-width: 240px;
+    }
+
+    .carousel-romantico .carousel-item {
+        height: 250px;
+    }
+
+    .titulo-principal {
+        font-size: 1.7rem;
+    }
+
+    .nombre-amor {
+        font-size: 1.3rem;
+    }
+
+    .parrafo-amor {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+
 }
 
-.card{
-    margin-bottom:15px;
-}
-
-.imagen-amor{
-    max-width:240px;
-}
-.carousel-romantico .carousel-item{
-height:250px;
-}
-
-.titulo-principal{
-font-size:1.7rem;
-}
-
-.nombre-amor{
-font-size:1.3rem;
-}
-
-.parrafo-amor{
-font-size:1rem;
-padding:0 20px;
-}
-
-
-}
-
-.imagen-amor{
-    width:100%;
-    max-width:320px;
-    display:block;
-    margin:20px auto;
-    border-radius:15px;
-    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+.imagen-amor {
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 
 /* FONDO OSCURO DEL MODAL */
-.modal-bg{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-display:none;
-align-items:center;
-justify-content:center;
-z-index:999;
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
 }
 
 /* CARTA */
-.carta{
-background:#fffaf5;
-border-radius:20px;
-padding:25px;
-max-width:420px;
-width:90%;
-text-align:center;
-box-shadow:0 10px 40px rgba(0,0,0,0.3);
-border:3px solid #7268fa;
-animation:abrirCarta 0.4s ease;
+.carta {
+    background: #fffaf5;
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border: 3px solid #7268fa;
+    animation: abrirCarta 0.4s ease;
 }
 
 /* IMAGEN */
-.carta-img{
-width:100%;
-max-height:230px;
-object-fit:cover;
-border-radius:15px;
-margin-bottom:15px;
+.carta-img {
+    width: 100%;
+    max-height: 230px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
 /* TEXTO DE CARTA */
-.carta-texto{
-font-family: "Georgia", serif;
-font-size:1.1rem;
-line-height:1.6;
-color:#444;
-padding:10px;
+.carta-texto {
+    font-family: "Georgia", serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    padding: 10px;
 }
 
 /* ANIMACION */
-@keyframes abrirCarta{
-from{
-transform:scale(0.7);
-opacity:0;
-}
-to{
-transform:scale(1);
-opacity:1;
-}
+@keyframes abrirCarta {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* ANIMACION */
-@keyframes aparecer{
-from{
-transform:scale(0.8);
-opacity:0;
-}
-to{
-transform:scale(1);
-opacity:1;
-}
+@keyframes aparecer {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
-.corazon{
-position:fixed;
-bottom:-20px;
-animation:flotar 4s linear forwards;
-pointer-events:none;
+.corazon {
+    position: fixed;
+    bottom: -20px;
+    animation: flotar 4s linear forwards;
+    pointer-events: none;
 }
 
-@keyframes flotar{
-0%{
-transform:translateY(0);
-opacity:1;
-}
-100%{
-transform:translateY(-100vh);
-opacity:0;
-}
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
 }
 
-.carousel-romantico{
-max-width:750px;
-margin:40px auto;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+.carousel-romantico {
+    max-width: 750px;
+    margin: 40px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.carousel-romantico .carousel-item{
-height:420px;
+.carousel-romantico .carousel-item {
+    height: 420px;
 }
 
-.carousel-romantico img{
-width:100%;
-height:100%;
-object-fit:cover;
-}
-.titulo-principal{
-font-size:2rem;
-font-weight:700;
-text-align:center;
-margin-top:15px;
-margin-bottom:10px;
-color:#333;
-}
-
-.nombre-amor{
-font-size:1.5rem;
-font-weight:600;
-text-align:center;
-margin-bottom:20px;
-color:#555;
-}
-
-.parrafo-amor{
-max-width:650px;
-margin:20px auto;
-font-size:1.1rem;
-line-height:1.7;
-text-align:center;
-color:#555;
-padding:0 10px;
-}
-.card-img-top{
-    height: 300px;       /* todas tendrán la misma altura */
+.carousel-romantico img {
     width: 100%;
-    object-fit: cover;   /* mantiene proporción y recorta lo que sobra */
-}  
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-principal {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.nombre-amor {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.parrafo-amor {
+    max-width: 650px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: center;
+    color: #555;
+    padding: 0 10px;
+}
+
+.card-img-top {
+    height: 300px;
+    /* todas tendrán la misma altura */
+    width: 100%;
+    object-fit: cover;
+    /* mantiene proporción y recorta lo que sobra */
+}
+
+/* =========================================
+   SECCIÓN MOMENTOS
+   ========================================= */
+
+.momento {
+    max-width: 1100px;
+    margin: 140px auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+    padding: 0 20px;
+}
+
+/* Los momentos pares invierten el orden */
+.momento:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+/* Imagen del momento */
+.momento-imagen {
+    flex: 1;
+}
+
+.momento-imagen img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+/* Contenido */
+.momento-contenido {
+    flex: 1;
+}
+
+.momento-fecha {
+    color: #888;
+    font-size: 1rem;
+}
+
+.momento-contenido h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.momento-contenido p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* =========================================
+   DISEÑO PARA CELULARES
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .momento {
+        flex-direction: column;
+        gap: 25px;
+        margin: 50px 20px;
+    }
+
+    /* En móvil todos los momentos tienen el mismo orden */
+    .momento:nth-of-type(even) {
+        flex-direction: column;
+    }
+
+    .momento-imagen,
+    .momento-contenido {
+        width: 100%;
+    }
+
+    .momento-imagen img {
+        height: 300px;
+    }
+
+    .momento-contenido h2 {
+        font-size: 1.7rem;
+    }
+
+    .momento-contenido p {
+        font-size: 1rem;
+    }
+
+    /* En celular ocultamos la línea central */
+    .timeline::before {
+        display: none;
+    }
+
+    /* En celular ocultamos los corazones centrales */
+    .momento::before {
+        display: none;
+    }
+
+}
+/* =========================================
+   LÍNEA DE TIEMPO
+   ========================================= */
+
+.timeline {
+    position: relative;
+    padding: 1px 0;
+}
+
+/* Línea vertical central */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+
+    width: 5px;
+    background-color: #ff5c93;
+
+    transform: translateX(-50%);
+}
+
+/* Corazón que marca el momento */
+.momento::before {
+    content: "❤️";
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+    background-color: white;
+
+    z-index: 2;
+}
+.momento-imagen,
+.momento-contenido {
+    flex: 1;
+}
